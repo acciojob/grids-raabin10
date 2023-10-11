@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Responsive Grid Layout</title>
+    <style>
+        .container {
+            width: 600px;
+            border: 5px solid rgb(4, 255, 4);
+            background-color: rgb(41, 0, 0);
+        }
+
+        .row {
+            border: 5px solid rgb(255, 188, 188);
+            height: 200px;
+        }
+
+        .col-md-4 {
+            border: 2px dotted rgb(38, 38, 43);
+        }
+
+        .row1-col1 {
+            background-color: teal;
+        }
+
+        .row1-col2 {
+            background-color: thistle;
+        }
+
+        .row2-col1 {
+            background-color: tomato;
+        }
+
+        .row2-col2 {
+            background-color: turquoise;
+        }
+
+        .row3-col1 {
+            background-color: violet;
+        }
+
+        .row3-col2 {
+            background-color: yellowgreen;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 row1-col1">
+                Column 1
+            </div>
+            <div class="col-md-8 row1-col2">
+                Column 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 row2-col1">
+                Column 1
+            </div>
+            <div class="col-md-4 row2-col2">
+                Column 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center row3-col1">
+                Column 1
+            </div>
+            <div class="col-md-4 text-center row3-col2">
+                Column 2
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
